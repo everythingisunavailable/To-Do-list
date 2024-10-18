@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+        <div class="header">
+            <div class="logo" style="font-size: xx-large; color: white;">
+                <b>
+                    TO DO
+                </b>
+            </div>
+        </div>
+
+<!-- ndarja e faqes ne 2 -->
+        <div class="theContainer">
+
+            <!--<<<<<<<<<<<<<<<<<<<<<<<<LEFT-->
+            <div class="leftContainer"> 
+                <div class="containerLogo">
+                    Week Days
+                </div> 
+                <div class="dateContainer">
+                    <p id="data"></p>
+                </div>
+                <div class="weekDay task">
+                    Monday
+                </div>
+                <div class="weekDay task">
+                    Tuesday
+                </div>
+                <div class="weekDay task">
+                    Wednesday
+                </div>
+                <div class="weekDay task">
+                    Thursday
+                </div>
+                <div class="weekDay task">
+                    Friday
+                </div>
+                <div class="weekDay task">
+                    Saturday
+                </div>
+                <div class="weekDay task">
+                    Sunday
+                </div>
+            </div>
+
+            <!--RIGHT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+            <div class="rightContainer" id="gjyshi">
+                <div class="containerLogo">
+                    Tasks for Today
+                </div>
+                <div id="parentDiv">
+                </div>
+                <div class="spaceDiv">
+                    <br >
+                    <br >
+                    <br >
+                    <br >
+                    <br >
+                    <br >
+
+                </div>
+                <div class="buttonContainer">
+                    <div class="add" style="background-color: green;" onclick="addTask()">
+                        <img src="images/icons8-add-64.png" alt="add task" width="50px">
+                        <div class="buttonText">New Task</div>
+                    </div>
+                    <div class="delete" style="background-color: red;" onclick="removeTasks()">
+                        <img src="images/icons8-delete-64.png" alt="add task" height="45px" width="45px" style="padding: 2px 5px">
+                        <div class="buttonText">Clear All</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="myScript.js"></script>
+</body>
+</html>

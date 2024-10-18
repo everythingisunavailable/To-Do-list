@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 8vh;
+    border-radius: 20px;
+    background-color: rgb(13, 27, 42);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden;
+}
+.theContainer{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+.leftContainer{
+    overflow-y:scroll;
+    width: 30%;
+    height: 85vh;
+    margin-top: 2.5vh;
+    border-radius: 20px;
+    background-color: rgb(224, 225, 221);
+}
+.leftContainer::-webkit-scrollbar{
+    display: none; 
+}
+.rightContainer{
+    width: 69%;
+    height: 85vh;
+    margin-top: 2.5vh;
+    margin-left: auto;
+    border-radius: 20px;
+    background-color: rgb(224, 225, 221);
+    overflow-y: scroll;
+
+}
+.rightContainer::-webkit-scrollbar{
+    display: none; 
+}
+.containerLogo{
+    height: 50px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: rgb(27, 38, 59);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    padding-top: 15px;
+}
+
+/*fillim task*/
+.task{
+    height: 50px;
+    width: 95%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(119, 141, 169);
+    margin-top: 10px;
+
+    padding: 10px;
+    color: black;
+    font-size: x-large;
+    font-weight:600;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+/*text before confirm*/
+.task textarea{
+    background-color: rgb(119, 141, 169);
+    height: 37px;
+    width: 80%;
+    border: none;
+    resize: none;
+    border-radius: 15px;
+    font-family:'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+    padding-top: 12px;
+    padding-left: 30px;
+    float: left;
+}
+#confirmButton{
+    float: right;
+    width: 100px;
+    height: 37px;
+    margin: 6px;
+    border-radius: 20px;
+    border: 2px solid rgb(27, 38, 59);
+    background-color: rgb(159, 177, 188);
+}
+#confirmButton:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+/*text after confirm*/
+.textDiv{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.doneButton{
+    float: right;
+    width: 100px;
+    height: 37px;
+    margin: 6px;
+    border-radius: 20px;
+    border: 2px solid rgb(27, 38, 59);
+    background-color: green;
+}
+.doneButton:hover{
+    cursor: pointer;
+}
+
+/*done animation + replace div */
+@keyframes strike {
+    from { text-decoration-color: transparent; background-color: rgb(119, 141, 169, 1);
+    }
+    to { text-decoration-color: black; background-color: rgb(119, 141, 169, 0.2);
+    }
+  }
+  .strike {  
+    text-decoration: line-through;
+    animation: strike 0.5s linear;
+
+    height: 50px;
+    width: 95%;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(119, 141, 169, 0.2);
+    margin-top: 10px;
+
+    padding: 10px;
+    color: black;
+    font-size: x-large;
+    font-weight:600;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+/*mbarim task*/
+
+
+.dateContainer{
+    text-align: center;
+    text-decoration: underline;
+    color:grey;
+}
+.weekDay{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 89%;
+    height: 48px;
+    background-color: rgb(167, 181, 200);
+    padding-top: 25px;
+}
+.weekDay:hover{
+    cursor: pointer;
+    background-color: rgb(119, 141, 169);
+    transition: ease-in 0.1s;
+}
+
+.buttonContainer{
+    width: 300px;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+
+    display:flex;
+    justify-content: space-between;
+}
+.add,
+.delete{
+    background-color: #a52a2a;
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+}
+.buttonText{
+    padding-top: 15px;
+}
+.add:hover,.delete:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+}
